@@ -10,6 +10,9 @@ int main(void)
 DDRB |= _BV(DDB5);
 DDRD |= _BV(DDD5);
 DDRD &= ~_BV(DDD6);
+//Uncomment if you are using pin 2 as power output for reciever
+// DDRD  |= _BV(DDD2);
+// PORTD |= _BV(PORTD2);
 
 while(1){
 //checks if motion detector was tripped
